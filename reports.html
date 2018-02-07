@@ -12,20 +12,24 @@
             margin: 0;
             padding: 0;
         }
-        
+
         body {
-            background: url("static/images/background.jpg");
-            font-size: 14px;
+            background-image: url("static/images/background.jpg");
+            background-repeat: repeat;
+            background-position: center top;
+            background-size: cover;
+            background-attachment: fixed;
+            font-size: 0px;
             font-family: "微软雅黑";
             color: #666
         }
-        
+
         .report {
             width: 630px;
             height: 100px;
             margin: 100px auto;
         }
-        
+
         .report .r_title {
             font-size: 24px;
             color: #ffffff;
@@ -33,7 +37,7 @@
             text-align: center;
             line-height: 60px;
         }
-        
+
         .report .r_box .r_text {
             width: 500px;
             height: 36px;
@@ -41,7 +45,7 @@
             line-height: 36px;
             padding-left: 10px;
         }
-        
+
         .report .r_box .r_btn {
             width: 100px;
             height: 36px;
@@ -54,11 +58,14 @@
     <div class="report">
         <h1 class="r_title">Python开发自动化测试大数据运维监控系统</h1>
         <div class="r_box">
-            <input type="text" class="r_text" /><input type="button" value="开始统计" class="r_btn" />
+            <div style="height: 36px;display: inline-block;vertical-align: top;">
+                <input type="text" class="r_text">
+            </div>
+            <div style="height: 36px;display: inline-block;vertical-align: top;">
+                <input type="button" value="开始统计" class="r_btn">
+            </div>
         </div>
     </div>
-
 </body>
-
 
 </html>
